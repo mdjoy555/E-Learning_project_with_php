@@ -1,1 +1,96 @@
+.navbar-brand{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2em;
+    font-style: bold;
+    color: #fff;
+}
 
+.custom-nav .custom-nav-item a{
+    color: #fff !important;
+}
+
+.custom-nav-item:hover{
+    background-color: #dc3545;
+    border: 1px solid #dc3545;
+    border-radius: 10px;
+}
+
+.remove-vid-margin{
+    margin: 0px;
+    padding: 0px;
+}
+
+.vid-parent{
+    position: relative;
+}
+
+video{
+    height: 100%;
+    width: 100%;
+}
+
+.vid-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #225470;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.vid-content{
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+}
+
+.bottom-banner{
+    color: #fff;
+    padding: 10px;
+}
+
+.bottom-banner:first-child{
+    padding-left: 50px;
+}
+
+a.social-hover:hover{
+    padding: 5px 100px;
+    text-decoration: none;
+    background-color: rgb(95,93,93);
+}
+
+.stripe{
+    background-image: linear-gradient(240deg,#ed213a,#93291e);
+    padding: 3rem;
+    height: 13rem;
+    margin-top: 4rem;
+    transform: rotate(10deg);
+    z-index: -5;
+}
+
+@media screen and (min-width: 0px) and (max-width: 700px){
+    .my-content, .txt-banner{
+        display: none;
+    }
+
+    .vid-content{
+        top: 20%;
+        left: 40%;
+    }
+
+    .custom-nav .custom-nav-item a{
+        padding: 10px 20px;
+        background-color: #225470;
+    }
+
+    .custom-nav .custom-nav-item:hover{
+        background-color: none;
+        border: none;
+        border-radius: none;
+    }
+}
